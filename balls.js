@@ -54,6 +54,8 @@ function draw() {
 	    balls[i].vx = -balls[i].vx;
 		}
 	}
+
+	
 window.requestAnimationFrame(draw);
 
 }	
