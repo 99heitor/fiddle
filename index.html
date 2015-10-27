@@ -1,6 +1,6 @@
 <html>
 	<body>
-	<canvas id="canvas" width="700" height="400"></canvas>
+	<canvas id="canvas" width=800 height=600 margin="0px" ></canvas>
 	  <script>
 
 	var canvas = document.getElementById('canvas');
@@ -59,12 +59,31 @@
 		    balls[i].vx = -balls[i].vx;
 			}
 		}
-	raf = window.requestAnimationFrame(draw);
+	window.requestAnimationFrame(draw);
 
 	}	
+
+	/*window.addEventListener('resize', resizeCanvas, false);
+	function resizeCanvas() {
+            canvas.width = $('body').innerWidth();
+            canvas.height = $('body').innerWidth();
+
+        window.requestAnimationFrame(draw);
+    }*/
 
 	window.requestAnimationFrame(draw);
 
 	  </script>
 	</body>
+	<style>
+	* {margin : 0; padding : 0;}
+
+	body, html { height:100%; }
+
+	#canvas {
+		position:absolute;
+	    width:100%;
+	    height:100%;
+	}
+	</style>
 </html>
