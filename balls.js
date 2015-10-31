@@ -1,6 +1,6 @@
 
 // Variáveis
-var canvas = document.getElementById('canvas');
+var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
 var raf;
 var running = false;
@@ -17,10 +17,8 @@ function getRandomColor() {
 }
 
 function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
 
-    window.requestAnimationFrame(draw);
+   
 }
 
 
