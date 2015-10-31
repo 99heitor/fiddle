@@ -1,7 +1,14 @@
+<!DOCTYPE html>
 <html>
-	<body>
-		<canvas id="canvas" ></canvas>
-		<script type="text/javascript" src="balls.js"></script>
-	</body>
-	<link rel="stylesheet" type="text/css" href="style.css" />
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.js"></script>
+<!-- Define inlined PaperScript associate it with myCanvas -->
+<script type="text/paperscript" src="sim.js" canvas="myCanvas" keepalive = "false"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<canvas id="myCanvas" resize="true" ></canvas>
+</body>
 </html>
